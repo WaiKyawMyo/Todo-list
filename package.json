@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://waikyawmyo.github.io/Todo-list/",
   "name": "todo-mvc",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "json" : "json-server -w src/Data/db.json --port=3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
